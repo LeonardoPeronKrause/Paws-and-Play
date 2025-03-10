@@ -56,10 +56,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url('img/cachorroMain.png') no-repeat;
     background-size: cover;
-    background-position: 23.5% center;
+    background-position: 20% center;
     padding: 120px 20px 40px;
     text-align: left;
-    min-height: 70vh;
+    min-height: 65vh;
 }
 
 .hero-content h1 {
@@ -107,7 +107,9 @@ body {
 }
 
 .shop {
-    padding: 10px 20px;
+    padding: 40px 16px 40px 16px;
+    gap: 10px;
+    height: auto;
 }
 
 .shop-header {
@@ -116,6 +118,7 @@ body {
     justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    gap: 8px;
 }
 
 .shop-header p {
@@ -130,7 +133,7 @@ body {
 }
 
 .shop-body {
-    padding: 30px;
+    padding: 30px 16px 10px 16px;
 }
 
 .shop-body p {
@@ -140,16 +143,103 @@ body {
 
 .shop-options {
     display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
 }
 
-.shop-options ul {
+.shop-options ol {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .shop-options li {
     display: flex;
     color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.shop-options li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens img {
+   width: 380px;
+}
+
+.shop2 {
+    padding: 40px 16px 40px 16px;
+    gap: 10px;
+    height: 1000vh;
+}
+
+.shop2-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    gap: 8px;
+}
+
+.shop2-header p {
+    display: flex;
+    align-items: left;
+    color: black;
+    font-size: 20px;
+}
+
+.shop2-header img {
+    height: 24px;
+    width: 24px;
+}
+
+.shop2-body {
+    padding: 30px;
+}
+
+.imagens2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container:nth-child(5) {
+    grid-column: span 2;
+    height: 400px;
 }
 
 @media (min-width: 768px) {
