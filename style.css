@@ -211,6 +211,7 @@ body {
     padding: 30px;
 }
 
+
 .imagens2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
@@ -223,6 +224,13 @@ body {
     text-align: center;
 }
 
+.image-container img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 .image-container p {
     position: absolute;
     left: 50%;
@@ -232,19 +240,14 @@ body {
     font-weight: bold;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
 .image-container:nth-child(5) {
     grid-column: span 2;
-    height: 400px;
 }
 
-.image-container:nth-last-child(1) {
-    height: auto;
+.image-container:nth-child(5) img {
+    height: 180px;
+    object-fit: cover;
+    background-position: center 70%;
 }
 
 .about-us {
@@ -288,10 +291,82 @@ body {
     display: none;
 }
 
+.blog {
+    height: auto;
+    padding: 0px 16px 0px 16px;
+}
+
+.blog-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    gap: 10px;
+}
+
+.blog-header p {
+    color: black;
+    font-size: 20px;
+}
+
+.blog-header img {
+    width: 24px;
+    height: 24px;
+}
+
+.blog-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px 40px 0px;
+}
+
+.blog-body .h1-primeiro {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+}
+
+.blog-body .h1-segundo {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.blog-body p {
+    padding: 20px 0px;
+    font-size: 16px;
+    color: black;
+}
+
+.blog-body .blog-button {
+    display: flex;
+    width: 100%;
+}
+
+.blog-button button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.blog-body .image {
+    display: none;
+}
+
 .team {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 100vh;
     padding: 0px 16px 0px 16px;
 }
 
@@ -311,6 +386,24 @@ body {
 .team-header img {
     width: 24px;
     height: 24px;
+}
+
+.team-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+
+.team-body .profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.team-body .profissional img {
+    width: 150px;
+    height: 200px;
 }
 
 @media (min-width: 768px) {
