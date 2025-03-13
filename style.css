@@ -456,7 +456,8 @@ body {
     flex-direction: column;
     padding: 40px 16px 2px 16px;
     background-color: black;
-    height: 100vh;
+    height: 105vh;
+    border-bottom: 1px solid #ccc;
 }
 
 .get-header {
@@ -509,6 +510,72 @@ body {
     font-size: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
+    color: black;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.policy {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
