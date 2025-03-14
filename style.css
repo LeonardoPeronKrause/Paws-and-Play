@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,6 +50,41 @@ body {
     opacity: 0.7;
     cursor: pointer;
 }
+
+.menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #ededed;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: #d4d4d4;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #101828;
+}
+
 
 /* Hero Section */
 .hero {
@@ -145,12 +180,12 @@ body {
 .shop-options {
     display: flex;
     justify-content: center;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
 }
 
 .shop-options ol {
     display: flex;
-    gap: 30px;
+    gap: 12px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -164,10 +199,12 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease;
+    padding: 10px;
 }
 
 .shop-options li:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
 .imagens {
@@ -248,7 +285,7 @@ body {
 .image-container:nth-child(5) img {
     height: 180px;
     object-fit: cover;
-    background-position: center 70%;
+    background-position: 150px;
 }
 
 .about-us {
@@ -368,7 +405,7 @@ body {
 .team {
     display: flex;
     flex-direction: column;
-    height: 93vh;
+    height: auto;
     padding: 0px 16px 0px 16px;
 }
 
@@ -454,10 +491,11 @@ body {
 .get-in {
     display: flex;
     flex-direction: column;
-    padding: 40px 16px 2px 16px;
-    background-color: black;
-    height: 105vh;
+    padding: 40px 16px 40px 16px;
+    background-color: #101828;
+    height: auto;
     border-bottom: 1px solid #ccc;
+
 }
 
 .get-header {
@@ -571,11 +609,128 @@ textarea {
 .submit-btn {
     width: 100%;
     padding: 10px 20px;
-    background-color: black;
+    background-color: #101828;
     color: white;
     border-radius: 7px;
     border: none;
     cursor: pointer;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #101828;
+    padding: 16px;
+}
+
+.newsletter-fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter-header h2 {
+    margin-top: 40px;
+}
+
+.newsletter-header p {
+    font-size: 12px;
+}
+
+.newsletter-input {
+    padding-top: 30px;
+    width: 100%;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.newsletter-btn {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.newsletter-btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.paws-header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.paws-header img {
+    width: 35px;
+    height: 35px;
+}
+
+.paws-header p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.paws-subtitle {
+    color: #ccc;
+    padding: 14px;
+}
+
+.paws-body {
+    display: flex;
+    justify-content: left;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.lists ul {
+    list-style: none;
+}
+
+.lists ul li {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.lists ul li:first-child {
+    font-weight: bold;
+}
+
+.paws-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+}
+
+.paws-footer p {
+    color: #ccc;
+    padding: 10px;
+}
+
+.paws-footer .images {
+    display: flex;
+    gap: 20px;
+}
+
+.paws-footer .images img {
+    width: 24px;
+    height: 24px;
 }
 
 @media (min-width: 768px) {
