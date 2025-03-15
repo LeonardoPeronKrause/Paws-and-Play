@@ -54,8 +54,42 @@
             </ol>
         </div>
         <div class="imagens">
-            <img src="img/racaoGato.png">
-            <img src="img/racaogato2.png">
+            <div class="shop-card">
+                <img src="img/racaoGato.png">
+                <div class="overlay">
+                    <span class="price">₦15,000.00</span>
+                    <div class="text-container">
+                        <h3>Multivitamin For Cat</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-container">
+                            <button class="more">+</button>
+                            <button class="number">1</button>
+                            <button class="less">-</button>
+                        </div>    
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src="img/racaogato2.png">
+                <div class="overlay">
+                    <span class="price">₦15,000.00</span>
+                    <div class="text-container">
+                        <h3>Cat Food</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-container">
+                            <button class="more">+</button>
+                            <button class="number">1</button>
+                            <button class="less">-</button>
+                        </div>    
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -65,26 +99,26 @@
             <p>Shop</p>
         </header>
         <div class="imagens2">
-            <span class="image-container">
+            <div class="image-container">
                 <p>Grooming</p>
                 <img src="img/Grooming.png">
-            </span>
-            <span class="image-container">
+            </div>
+            <div class="image-container">
                 <p>Boarding</p>
                 <img src="img/Boarding.png">
-            </span>
-            <span class="image-container">
+            </div>
+            <div class="image-container">
                 <p>Veterinary</p>
                 <img src="img/veterinary.png">
-            </span>
-            <span class="image-container">
+            </div>
+            <div class="image-container">
                 <p>Training</p>
                 <img src="img/training.png">
-            </span>
-            <span class="image-container">
+            </div>
+            <div class="image-container">
                 <p>Adoption</p>
                 <img src="img/adoption.png">
-            </span>
+            </div>
         </div>
     </section>
 
@@ -219,28 +253,28 @@
             </div>
         </div>
         <div class="fundo">
-            <form action="form">
+            <form id="form">
                 <div class="linha">
                     <div class="campo">
                         <label for="first-name">First name</label>
-                        <input type="text" id="first-name" placeholder="First Name" required>
+                        <input type="text" id="first-name" placeholder="First Name" >
                     </div>
                     <div class="campo">
-                        <label for="last name">Last name</label>    
-                        <input type="text" id="last-name" placeholder="Last Name" required>
+                        <label for="last-name">Last name</label>    
+                        <input type="text" id="last-name" placeholder="Last Name" >
                     </div>
                 </div>
                 <div class="campo">
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="you@company.com" required>
+                    <input type="text" id="email" placeholder="you@company.com" >
                 </div>
                 <div class="campo">
                     <label for="message">Message</label>
-                    <textarea type="text" id="message" required></textarea>
+                    <textarea type="text" id="message" ></textarea>
                 </div>
                 <div class="policy">
                     <div class="checkbox-div">
-                        <input type="checkbox" id="accept" required>
+                        <input type="checkbox" id="accept">
                     </div>
                     <label for="accept">You agree to our friendly <a href="#">privacy policy</a>.</label>
                 </div>
@@ -252,16 +286,16 @@
     </section>
 
     <section class="newsletter">
-        <div class="newsletter-fundo">
+        <div class="newsletter-fundo" id="newsletter">
             <div class="newsletter-header">
                 <h2>Join our newsletter</h2>
                 <p>Be the first to receive latest updates on promo, sales and offers</p>
             </div>
-            <div class="newsletter-input">
-                <input type="text" placeholder="Enter your email">
+            <div class="newsletter-input" id="newsletter-input">
+                <input type="text" id="newsletter-email" placeholder="Enter your email">
             </div>
             <div class="newsletter-btn">
-                <button>Subscribe</button>
+                <button id="subscribe-btn">Subscribe</button>
             </div>
         </div>
         <div class="paws-header">
