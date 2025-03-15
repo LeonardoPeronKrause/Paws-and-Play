@@ -279,8 +279,21 @@ body {
 
 .buttons {
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 30px;
+}
+
+.buttons .div-button-add {
+    display: flex;
+    background-color: #101828;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.div-button-add button {
+    font-size: 15px;
 }
 
 .button-container {
