@@ -1,3 +1,4 @@
+// Menu
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
@@ -7,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+// Validação de campos preenchidos no formulário
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -45,6 +46,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     alert('Formulário enviado com sucesso!');
 });
 
+// Validação para o email na newsletter
 document.getElementById('subscribe-btn').addEventListener('click', function (event) {
     const email = document.getElementById('newsletter-email').value.trim();
 
@@ -55,3 +57,33 @@ document.getElementById('subscribe-btn').addEventListener('click', function (eve
 
     alert('Inscrito com sucesso. Em breve você receberá atualizações...');
 });
+
+// Função para dar vida aos botoes de + e - da seção shop
+
+// Pega todos os botões que estao dentro da div 'button-container'
+const buttonContainers = document.querySelectorAll('.button-container');
+
+buttonContainers.forEach(container => {
+    const buttonMore = container.querySelector('.more');
+    const buttonLess = container.querySelector('.less');
+    const buttonNumber = container.querySelector('.number');
+    
+    let currentValue = 1;
+    
+    function updateValue() {
+        buttonNumber.textContent = currentValue;
+    }
+    
+    buttonMore.addEventListener('click', function() {
+        currentValue++;
+        updateValue();
+    });
+    
+    buttonLess.addEventListener('click', function() {
+        if (currentValue > 0) {
+            currentValue--;
+            updateValue();
+        }
+
+    });
+})
