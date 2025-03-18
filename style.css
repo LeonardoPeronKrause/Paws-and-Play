@@ -85,6 +85,9 @@ body {
     color: #101828;
 }
 
+.get-started {
+    display: none;
+}
 
 /* Hero Section */
 .hero {
@@ -892,23 +895,101 @@ input::placeholder {
     height: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar .logo {
+        margin-left: 50px;
+    }
+
+    .navbar .menu-btn {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        margin-right: 270px;
+    }
+    
+    .dropdown {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        margin-left: 5px;
+    }
+
+    .dropdown img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .menu li:hover {
+        background-color: transparent;
+        opacity: 0.7;
+    }
+
+    .menu a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ccc;
+    }
+
+    .menu img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .get-started {
+        display: flex;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 35px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .get-started:hover {
+        background-color: #ccc;
+    }
+
     .hero {
-        background-position: center;
-        padding: 150px 100px;
-        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url('img/cachorroMain.png') no-repeat;
+        background-size: 140%;
+        background-position: left 25%;
+        background-clip: cover;
     }
 
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 100px;
+        max-width: 50%;
     }
 
     .hero-content p {
-        font-size: 18px;
-    }
-
-    .btn-shop {
-        padding: 16px 32px;
-        font-size: 18px;
+        font-size: 30px;
+        max-width: 50%;
     }
 }
